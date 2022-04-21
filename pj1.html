@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the favicon image -->
+    <link rel="icon" href="image/favicon.ico">
+    <!-- Link to the reset file -->
+    <link rel="stylesheet" href="css/html5reset.css">
+    <!-- Link to the stylesheet -->
+    <link href="https://fonts.font.im/css?family=Poppins:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>About</title>
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="nav index" style="height: 80px;">
+			<a href="index.html" class="nav-logo">
+				<img src="image/look.png" alt="an icon with an eye on it."/>
+			</a>
+			<div class="layui-container">
+				<div class="nav-list">
+					<button><span class=""></span><span style="display: block;"></span><span class=""></span></button>
+					<ul class="layui-nav" lay-filter="">
+						<li class="layui-nav-item"><a href="./index.html">Design</a></li>
+						<li class="layui-nav-item"><a href="./pj1.html">DiDi Select</a></li>
+						<li class="layui-nav-item"><a href="./photography.html">Gallery</a></li>
+						<li class="layui-nav-item active"><a href="./resume.html">About</a></li>
+	
+						<!--                    <span class="layui-nav-bar" style="left: 342px; top: 78px; width: 0px; opacity: 0;"></span>-->
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+    
+    <main class="pj1">
+        <div id = "headPicture">
+            <img src = "image/didiSelect.png" alt = "a picture providing an overview of the app interfaces, it contains four hero screens of the app, including the home page, the delievery confirming page, the Notice Arrival function page, and notification receiving page." width="300"/>
+        </div>
+
+        <div class="projectContent">
+            <div>
+                <h1>DiDi Select | Arrival Notice Flow Redesign</h1>
+            </div>
+
+            <div>
+                <h3>BACKGROUND</h3>
+                <!-- 次标题 -->
+                <h4>Stakeholders in the Group Purchasing Business Model</h4>
+                <!-- 标题 -->
+                <p class="content">As a startup project of DiDi that is designed to allow ​a group of residents within the same community to buy daily necessities together with less face-to-face contact and lower prices, DiDi Select has an average of 1.07 million daily active group leaders. While employed, I focused on improving the user experience of the app on the group leader's side.</p>
+                <!-- 正文 -->
+                <img src = "image/stakeholders-01.jpg" alt = "an illustration showing the different stakeholders in the group purchasing business model" width="300"/>
+                <h2>In the group purchase business, we seek a high turnover rate to keep fresh foods in a good condition.</h2>
+                <!-- 醒目总结 -->
+                <p class="content">Group leaders are the last node on this chain. In order to enable the group leaders to timely notify their customers after receiving the daily goods, we provide the Function of Arrival Notification on the app.</p>
+            </div>
+
+            <div>
+                <h3>PROBLEM SCOPING</h3>
+                <h4>I noticed through business data that the original Arrival Notice feature need to be optimized:</h4>
+                <p class="title">1 Platform Loss</p>
+                <p class="content">The after-sale rate of the products is 1.8%, among which 20% of the after-sale is caused by the damage of the products due to customers not picking up the goods in time,  the value of the products in this part accounts for 0.36% of the GMV.</p>
+                <p class="title">2 Low Function usage</p>
+                <p class="content">According to daily usage data, only 34.92% of the group leaders who have daily records of confirming receipt will use the Arrival Notification function.</p>
+                <p class="title">3 3 Costomer Complaints</p>
+                <p class="content">Customers' negative reviews for the group leaders consisted 2.03% of the total reviews, among which negative reviews tagged "Unresponsive Notifications" accounts for 31.84% of the total, ranking the top 2 complaints.</p>
+            </div>
+
+            <div>
+                <h3>USAGE DATA ANALYSIS & USER INTERVIEW</h3>
+                <h4>I dug into user habits through online questionnaires and user interview</h4>
+                <p class="content">According to the results of the questionnaire, 64.7% of the group leaders will send the arrival notice immediately after they finished the inventory. The main reasons for not using the function are their different habits in notifying their customers and the cumbersome operations process of the function.</p>
+                <img src = "image/research.png" alt = "research result based on the online questionnaire. Over 50% of the group leaders use the Arrival Notice function every day. the reason why those who don't use the function is they thought the funtion takes too many steps to send the notification." width="200"/>
+                <h4>I further gathered group leaders' feedback on this feature</h4>
+                <img src = "image/interview picture.png" alt = "interview pictures took at the group leaders' places" width="200"/>
+            </div>
+
+            <div>
+                <h2>How might we simplify the notification sending process and make the interface more friendly so that more group leaders would use it to notify their customers?</h2>
+            </div>
+
+            <div class="painPoint">
+                <div>
+                    <img src = "image/arrival notice detailed page.png" alt = "the original detailed arrival notice page" width ="200"> 
+                </div>
+
+                <div class="detailPoints">
+                    <div>
+                        <p class="title">Pain Point 1</p>
+                        <p class="content">The Arrival Notice function only serves as an optional choice after group leaders confirmed the delivery.</p>
+                        <img src = "image/1@2x.png" alt = "interviewee saying 'the function could be useful if it can send the notification automatically after I confirm the delievery'" width ="200"> 
+                        <img src = "image/2@2x.png" alt = "interviewee saying 'I'd rather do it myself, if the app do it for me, my customers might come picking up their order before I finish sorting'" width="200"/>
+                        <p class="title">Insight 1</p>
+                        <p class="content">Group leaders decide when to send the notifications but could apply a more straightforward guide for them to use the feature.</p>
+                    </div>
+
+                    <div>
+                        <p class="title">Pain Point 2</p>
+                        <p class="content">Currently, the Arrival Notice page only provides Today's Orders, group leaders still have trouble contacting customers who didn't show up for days.</p>
+                        <img src = "image/3@2x.png" alt = "interviewee saying 'I wish to have an easy way to contact thoes who didn't show up for days.'" width="200">
+                        <p class="title">Insight 2</p>
+                        <p class="content">Expanding the range of notifications to customers in the last three days.</p>
+                    </div>  
+
+                    <div>
+                        <p class="title">Pain Point 3</p>
+                        <p class="content">No enough visibility for group leaders to distinguish orders on the page.</p>
+                        <img src = "image/4.png" alt = "interviewee saying 'too much text on the page... it could be helpful if it procide some pictures of the goods.'" width="200">
+                        <p class="title">Insight 3</p>
+                        <p class="content">Add some visual elements onto the page (pictures of goods, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+
+
+
+</html>
